@@ -23,7 +23,7 @@ def subtraction(a = user_first_number, b = user_second_number):
 def multiplication(a = user_first_number, b = user_second_number):
     print(f"{a} * {b} = {a*b}")
 def division(a = user_first_number, b = user_second_number):
-    if a == 0 or b ==0 :
+    if a == 0 or b ==0 : # error handler
         print("Division cannot be performed by 0, please try another number")
     else:
         print(f"{a} / {b} = {a/b}")
@@ -40,3 +40,6 @@ elif user_operation_mode == 4:
     division()
 elif user_operation_mode == 5:
     modulus()
+
+
+
